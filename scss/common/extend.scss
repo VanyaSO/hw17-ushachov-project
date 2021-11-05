@@ -1,0 +1,54 @@
+%style-bg{
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+%hover{
+  cursor: pointer;
+  transition:$transition;
+}
+
+%center{
+  @extend %align-items-c;
+  justify-content: center;
+}
+%align-items-c{
+  display: flex;
+  align-items: center;
+}
+
+%align-content-c{
+  display: flex;
+  align-content: center;
+}
+
+%line{
+  border-radius: 0 0 12px 12px;
+  height: 10px;
+}
+
+%link-page{
+  font-style: normal;
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: uppercase;
+  &:hover{
+    text-decoration: revert;
+  }
+}
+
+%cases-content{
+  background-color: $dark-lite-color;
+  border: 1px solid #FFFFFF;
+  display: flex;
+  align-content: flex-end;
+  flex-wrap: wrap;
+}
+
+%tittle-item{
+  font-weight: bold;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: linear-gradient(to right, rgba(240, 20, 90, 1),rgba(239, 128, 128, 1));
+}

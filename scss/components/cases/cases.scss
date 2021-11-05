@@ -1,0 +1,55 @@
+.successful-cases{
+  .row{
+    h3{
+      padding: 20px;
+      margin: 0;
+    }
+    p{
+      padding: 0 20px 20px;
+      margin: 0;
+    }
+    .tittle{
+      background-color: $dark-lite-color;
+      border-radius: 12px 0 0 0;
+      h3{
+        @include text($font-size-sm-md, 17px);
+        border: 1px solid #FFFFFF;
+        text-transform: uppercase;
+        color: $bright-color;
+      }
+    }
+    .content-sm{
+      @extend %cases-content;
+      height: 198px;
+      h3{
+        @include text($font-size-xl, 28px);
+        color: #686887;
+      }
+      p{
+        @include text($font-size-lg, 26px);
+        color: #B3B3BA;
+      }
+    }
+    .content-xl{
+      @extend %cases-content;
+      height: 256px;
+      h3{
+        @include text($font-size-xl, 28px);
+        color: #686887;
+      }
+      p{
+        @include text($font-size-lg, 26px);
+        color: #B3B3BA;
+      }
+    }
+    .br-t-r{
+      border-radius: 0 12px 0 0;
+    }
+    .br-b-l{
+      border-radius: 0 0 0 12px;
+    }
+    .br-b-r{
+      border-radius: 0 0 12px 0;
+    }
+  }
+}

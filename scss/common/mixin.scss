@@ -1,0 +1,18 @@
+@mixin text($font-size, $line-h){
+  font-size: $font-size;
+  line-height: $line-h;
+}
+
+@mixin link-page($font-size, $line-h,$color){
+  font-size: $font-size-sm-md;
+  line-height: $line-h;
+  color: $color;
+  @extend %link-page;
+}
+
+@mixin tittle-item($font-size, $line-h,$margin){
+  @extend %tittle-item;
+  font-size: $font-size;
+  line-height: $line-h;
+  margin: $margin;
+}
