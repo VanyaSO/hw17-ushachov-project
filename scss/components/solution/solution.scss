@@ -1,0 +1,24 @@
+.solution {
+  padding-top: 200px;
+  background: linear-gradient(26.01deg, #323264 14.33%, #323264 51.39%, #7A425E 87.53%);
+
+  .solution-bg {
+    @extend %align-items-c;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-image: url("./../images/solution-bg.png");
+    background-position: center;
+    background-size: contain;
+    text-align: center;
+    color: white;
+    min-height: 645px;
+
+    .solution-tittle{
+      margin-bottom: 120px;
+      max-width: 350px;
+    }
+  }
+  img{
+    @extend %hover;
+  }
+}

@@ -11,17 +11,11 @@
 
 <header>
     <div class="header">
+
         <div class="container">
 
             <div class="row">
-
-                <div class="col-6">
-                    <div>
-                        <img src="./images/logo-header.png" alt="logo" title="logo">
-                    </div>
-                </div>
-
-                <div class="col-6 ">
+                <div class="col-12">
                     <div class="information">
                         <div class="languages">
                             <p>УК</p>
@@ -37,72 +31,146 @@
                             </li>
                         </ul>
                     </div>
-                    <nav class="navbar navbar-expand-lg">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <nav class="navbar navbar-expand-lg navbar-light">
                         <div class="container-fluid">
-                            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                            <a class="navbar-brand" href="#">
+                                <img src="./images/logo-header.png">
+                            </a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse justify-content-end navbar-collapse"  id="navbarSupportedContent">
                                 <ul class="navbar-nav">
-                                    <li class="nav-item nav-style">
-                                        <a class="nav-link" href="#">про нас</a>
+                                    <li class="nav-item">
+                                        <a class="nav-link nav-style" href="#">про нас</a>
                                     </li>
-                                    <li class="nav-item nav-style">
-                                        <a class="nav-link" href="#">послуги</a>
+                                    <li class="nav-item">
+                                        <a class="nav-link nav-style" href="#">послуги</a>
                                     </li>
-                                    <li class="nav-item nav-style">
-                                        <a class="nav-link" href="#">команда</a>
+                                    <li class="nav-item">
+                                        <a class="nav-link nav-style" href="#">команда</a>
                                     </li>
-                                    <li class="nav-item nav-style">
-                                        <a class="nav-link" href="#">публикации</a>
+                                    <li class="nav-item">
+                                        <a class="nav-link nav-style" href="#">публікації</a>
                                     </li>
-                                    <li class="nav-item nav-style">
-                                        <a class="nav-link" href="#">контакти</a>
+                                    <li class="nav-item">
+                                        <a class="nav-link nav-style"  href="#">контакти</a>
                                     </li>
+
+
                                 </ul>
                             </div>
                         </div>
                     </nav>
                 </div>
+            </div>
 
             </div>
 
         </div>
+
     </div>
 </header>
 
 <main>
-<!--    <div class="solution">-->
-<!--        <div class="container">-->
+    <div class="solution">
+        <div class="container">
 
-<!--            <div class="row">-->
-<!--            </div>-->
+            <div class="row">
+                <div class="col solution-bg" >
 
-<!--        </div>-->
-<!--    </div>-->
+                    <div class="solution-tittle">
+                        <h3>системний адміністратор правових рішень</h3>
+                    </div>
+
+                </div>
+                <div class="col-12 d-flex justify-content-center ">
+                    <img src="./images/solution-scroll-down.png" alt="">
+                </div>
+            </div>
+
+        </div>
+    </div>
 
     <div class="services">
         <div class="container">
 
             <div class="row justify-content-center">
-                <div class="col-4 services-categories">
-                    <p>Послідовні</p>
-                    <p>Клієнтоорієнтовані</p>
-                    <p>Інноваційні</p>
-                    <p>Бізнес-орієнтовані юристи</p>
-                </div>
-                <div class="col-5 categories-content">
-                    <h3>Перевертаємо уявлення про юридичні послуги</h3>
-                    <p>Консолідуючи багаторічний досвід і практику, юристи компанії супроводжують складні проекти і
-                        досягають прийняття ряду важливих для галузі рішень.
-                        Багато з них формують практику застосування морського права в Україні.</p>
+                <div class="col">
+                    <div class="d-flex align-items-start">
+                        <div class="services-categories">
+                            <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                <button class="nav-link active" id="v-pills-home-tab"
+                                        data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home"
+                                        aria-selected="true">Послідовні</button>
+                                <button class="nav-link" id="v-pills-profile-tab"
+                                        data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile"
+                                        aria-selected="false">Клієнтоорієнтовані</button>
+                                <button class="nav-link" id="v-pills-messages-tab"
+                                        data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages"
+                                        aria-selected="false">Інноваційні</button>
+                                <button class="nav-link" id="v-pills-settings-tab"
+                                        data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings"
+                                        aria-selected="false">Бізнес-орієнтовані юристи</button>
+                            </div>
+                        </div>
+
+                        <div class="categories-content">
+                            <div class="tab-content" id="v-pills-tabContent">
+
+                                <div class="tab-pane  fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">                    <h3>Перевертаємо уявлення про юридичні послуги</h3>
+                                    <p>
+                                        Консолідуючи багаторічний досвід і практику, юристи компанії супроводжують складні проекти і
+                                        досягають прийняття ряду важливих для галузі рішень.
+                                        Багато з них формують практику застосування морського права в Україні.
+                                    </p>
+                                </div>
+
+                                <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi excepturi nemo quibusdam
+                                        quo quod. A aspernatur incidunt laudantium magni sint.
+                                    </p>
+                                </div>
+
+                                <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus aperiam, assumenda, blanditiis
+                                        cum cupiditate deleniti dicta eligendi ex excepturi exercitationem explicabo fugit harum id impedit iste labore minima
+                                        nam nesciunt omnis porro possimus recusandae repellat, soluta suscipit vel vero voluptatum. Assumenda, deserunt ea earum eum
+                                        necessitatibus nobis sapiente sint.
+                                    </p>
+                                </div>
+
+                                <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus aperiam, assumenda, blanditiis
+                                        cum cupiditate deleniti dicta eligendi ex excepturi exercitationem explicabo fugit harum id impedit iste labore minima
+                                        nam nesciunt omnis porro possimus recusandae repellat, soluta suscipit vel vero voluptatum. Assumenda, deserunt ea earum eum
+                                        necessitatibus nobis sapiente sint.
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+
             <div class="row">
                 <div class="col p-0">
                     <div>
-                        <a href="#">послуги</a>
+                        <a href="#">послуги ></a>
                         <h3 class="title-item">Що ми вміємо робити краще за інших?</h3>
                     </div>
                 </div>
             </div>
+
             <div class="row">
                 <div class="col-4 services-item">
                     <div>
@@ -170,75 +238,80 @@
     <div class="team">
         <div class="line-one"></div>
         <div class="line-two"></div>
-        <div class="container">
-            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators " data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div>
-                <div class="carousel-inner">
+        <div class="container p-0">
 
-                    <div class="carousel-item active">
-                        <div class="row">
-                            <div class="col-4 slider-img p-0"
-                                 style="background-image: url('./images/team-photo-one.png')"
-                            ></div>
-                            <div class="col-8 p-0">
-                                <div class="link">
-                                    <a href="">команда</a>
-                                </div>
-                                <div class="slider-text">
-                                    <h3>Ми звикли брати на себе відповідальність та завжди
-                                        гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.
-                                    </h3>
-                                    <p>Олександр Олександровський</p>
-                                    <p>Перуючий партнер</p>
-                                </div>
-                            </div>
+            <div class="row">
+                <div class="col slider">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators " data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
                         </div>
-                    </div>
-                    <div class="carousel-item ">
-                        <div class="row">
-                            <div class="
-                                col-4 slider-img p-0"
-                                style="background-image: url('./images/team-photo-two.jpg')"
-                            ></div>
-                            <div class="col-8 p-0">
-                                <div class="link">
-                                    <a href="">команда</a>
-                                </div>
-                                <div class="slider-text">
-                                    <h3>Ми звикли брати на себе відповідальність та завжди
-                                        гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.
-                                    </h3>
-                                    <p>Олександр Олександровський</p>
-                                    <p>Керуючий партнер</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item ">
-                        <div class="row">
-                            <div class="
-                                col-4 slider-img p-0"
-                                style="background-image: url('./images/team-photo-three.jpg')"
-                            ></div>
-                            <div class="col-8 p-0">
-                                <div class="link">
-                                    <a href="">команда</a>
-                                </div>
-                                <div class="slider-text">
-                                    <h3>Ми звикли брати на себе відповідальність та завжди
-                                        гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.
-                                    </h3>
-                                    <p>Петро Думський</p>
-                                    <p>Партнер</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                        <div class="carousel-inner">
 
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-4 slider-img p-0"
+                                         style="background-image: url('./images/team-photo-one.png')"
+                                    ></div>
+                                    <div class="col-8 p-0">
+                                        <div class="link">
+                                            <a href="">команда ></a>
+                                        </div>
+                                        <div class="slider-text">
+                                            <h3>Ми звикли брати на себе відповідальність та завжди
+                                                гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.
+                                            </h3>
+                                            <p>Олександр Олександровський</p>
+                                            <p>Перуючий партнер</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item ">
+                                <div class="row">
+                                    <div class="
+                                col-4 slider-img p-0"
+                                         style="background-image: url('./images/team-photo-two.jpg')"
+                                    ></div>
+                                    <div class="col-8 p-0">
+                                        <div class="link">
+                                            <a href="">команда ></a>
+                                        </div>
+                                        <div class="slider-text">
+                                            <h3>Ми звикли брати на себе відповідальність та завжди
+                                                гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.
+                                            </h3>
+                                            <p>Олександр Олександровський</p>
+                                            <p>Керуючий партнер</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item ">
+                                <div class="row">
+                                    <div class="
+                                col-4 slider-img p-0"
+                                         style="background-image: url('./images/team-photo-three.jpg')"
+                                    ></div>
+                                    <div class="col-8 p-0">
+                                        <div class="link">
+                                            <a href="">команда ></a>
+                                        </div>
+                                        <div class="slider-text">
+                                            <h3>Ми звикли брати на себе відповідальність та завжди
+                                                гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.
+                                            </h3>
+                                            <p>Петро Думський</p>
+                                            <p>Партнер</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -246,7 +319,7 @@
 
     <div class="successful-cases">
         <div class="container">
-            <div class="row">
+            <div class="row ссс">
                 <div class="col-4 p-0">
                     <div class="col tittle">
                             <h3>Успішні кейси</h3>
@@ -281,59 +354,63 @@
     </div>
 
     <div class="clients">
-        <div class="row">
-            <h3>Вже довіряють нам</h3>
+
+        <div class="container-fluid">
+            <div class="row">
+                <h3>Вже довіряють нам</h3>
+            </div>
+
+            <div class="row">
+                <div class="col-3 clients-content">
+                    <img src="./images/client-hillel.png">
+                </div>
+
+                <div class="col-3 clients-content">
+                    <img src="./images/client-wanna.png">
+                </div>
+
+                <div class="col-3 clients-content">
+                    <img src="./images/client-tapge.png">
+                </div>
+
+                <div class="col-3 clients-content">
+                    <img src="./images/client-3D.png">
+                </div>
+
+                <div class="col-3 clients-content">
+                    <img src="./images/client-oran.png">
+                </div>
+
+                <div class="col-3 clients-content">
+                    <img src="./images/client-adte.png">
+                </div>
+
+                <div class="col-3 clients-content">
+                    <img src="./images/client-clickky.png">
+                </div>
+
+                <div class="col-3 clients-content">
+                    <img src="./images/client-ecolease.png">
+                </div>
+
+                <div class="col-3 clients-content">
+                    <img src="./images/client-infra.png">
+                </div>
+
+                <div class="col-3 clients-content">
+                    <img src="./images/client-city.png">
+                </div>
+
+                <div class="col-3 clients-content">
+                    <img src="./images/client-art-print.png">
+                </div>
+
+                <div class="col-3 clients-content">
+                    <img src="./images/client-ultimate.png">
+                </div>
+            </div>
         </div>
-        <div class="row">
-            <div class="col-3 clients-content">
-                <img src="./images/client-hillel.png">
-            </div>
 
-            <div class="col-3 clients-content">
-                <img src="./images/client-wanna.png">
-            </div>
-
-            <div class="col-3 clients-content">
-                <img src="./images/client-tapge.png">
-            </div>
-
-            <div class="col-3 clients-content">
-                <img src="./images/client-3D.png">
-            </div>
-
-            <div class="col-3 clients-content">
-                <img src="./images/client-oran.png">
-            </div>
-
-            <div class="col-3 clients-content">
-                <img src="./images/client-adte.png">
-            </div>
-
-            <div class="col-3 clients-content">
-                <img src="./images/client-clickky.png">
-            </div>
-
-            <div class="col-3 clients-content">
-                <img src="./images/client-ecolease.png">
-            </div>
-
-            <div class="col-3 clients-content">
-                <img src="./images/client-infra.png">
-            </div>
-
-            <div class="col-3 clients-content">
-                <img src="./images/client-city.png">
-            </div>
-
-            <div class="col-3 clients-content">
-                <img src="./images/client-art-print.png">
-            </div>
-
-            <div class="col-3 clients-content">
-                <img src="./images/client-ultimate.png">
-            </div>
-
-        </div>
     </div>
 
     <div class="publications">
@@ -342,7 +419,7 @@
             <div class="row">
                 <div class="col-12 pub-tittle">
                     <div>
-                        <a href="">Публікації</a>
+                        <a href="">Публікації ></a>
                     </div>
                     <h3>Нам є що розповісти</h3>
                 </div>
@@ -359,6 +436,17 @@
                                 Юристи-експерти-новелісти стирають пальці об «ctrl+c/ctrl+v».</p>
                         </div>
                     </div>
+                    <div class="pub-content">
+                        <div>
+                            <img src="./images/pub-4.png" alt="">
+                        </div>
+                        <div class="text">
+                            <a href="">Заповіт міленіала</a>
+                            <p class="date">19 серпня</p>
+                            <div class="pub-line"></div>
+                            <p>Що і як передаватимуть у спадщину сучасні влогери, опініон лідери і криптомільйонери Типовий спадок українського покоління Х</p>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="col-4 pub-item">
@@ -373,11 +461,96 @@
                             <p>На проектах я джун. При цьому я співвласник юридичної фірми. Як це відбулося. Перед вступом батьки мені казали, що якщо буду…</p>
                         </div>
                     </div>
+                    <div class="pub-content">
+                        <div>
+                            <img src="./images/pub-5.png" alt="">
+                        </div>
+                    </div>
                 </div>
+
+                <div class="col-4 pub-item">
+                    <div class="pub-content">
+                        <div>
+                            <img src="./images/pub-3.png" alt="">
+                        </div>
+                        <div class="text">
+                            <a href="">Штраф для «Корпорації добра»: що буде з Google та іншими за порушення GDPR</a>
+                            <p class="date">29 вересня</p>
+                            <div class="pub-line"></div>
+                            <p>І чому стягнення у 50 млн євро може стати доленосним прецедентом За матеріалами Mind.ua 21 січня Національна комісія із захисту даних.</p>
+                        </div>
+                    </div>
+                    <div class="pub-content">
+                        <div>
+                            <img src="./images/pub-6.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="opacity-block"></div>
             </div>
+
         </div>
     </div>
 </main>
+
+<footer>
+    <div class="footer">
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-4 footer-info d-flex flex-wrap">
+
+                    <div class="d-flex">
+                        <address>
+                            Одеса, Адміральський пр., 3
+                        </address>
+
+                        <ul class="mb-3">
+                            <li>
+                                <a href="#">
+                                    Подивитися на мапі
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="d-flex">
+                        <div>
+                            <img src="./images/facebook-blue.png" alt="logo" title="logo">
+                        </div>
+
+                        <ul class="m-0 d-flex align-items-center">
+                            <li>
+                                <p class="m-0">
+                                    +38 (050) 390 15 91
+                                </p>
+                            </li>
+                        </ul>
+
+                        <ul class="m-0 d-flex align-items-center">
+                            <li>
+                                <a href="#" type="email">
+                                    contact@hlegals.net
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                </div>
+
+                <div class="col-8 d-flex justify-content-end">
+                    <p>
+                        © 2021 ТОВ Юридична компанія «HLEGALS»
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>

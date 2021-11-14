@@ -1,0 +1,29 @@
+.footer{
+  padding: 33px 0 50px;
+  .row {
+    .footer-info{
+      address{
+        @include text($font-size-md,19px);
+        color: #323264;
+      }
+      ul{
+        li{
+          color: silver;
+          a{
+            @include text($font-size-sm,14px);
+            font-style: normal;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: $Aqua-color;
+          }
+          p{
+            @include text($font-size-md,19px);
+            color: #323264;
+            font-style: normal;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+}

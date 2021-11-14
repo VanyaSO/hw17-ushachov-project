@@ -56,5 +56,24 @@
         }
       }
     }
+    .navbar-light{
+      .navbar-toggler {
+        color: rgba(0,0,0,.55);
+        border-color: white;
+        &:focus {
+          text-decoration: none;
+          outline: 0;
+          box-shadow: none;
+        }
+        &:active {
+          text-decoration: none;
+          outline: 0;
+          box-shadow: 0 0 5px white;
+        }
+      }
+      .navbar-toggler-icon {
+        background-image: url('./../../../images/menu-header.png');
+      }
+    }
   }
 }

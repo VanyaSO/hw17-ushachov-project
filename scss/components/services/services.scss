@@ -2,19 +2,21 @@
   background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
   border-radius: 0 0 12px 12px;
   color: white;
-  padding-top: 180px;
+  padding-top: 80px;
   .row{
     @extend %align-content-c;
     .services-categories{
       @include text($font-size-xxl, 50px);
       text-align: right;
       margin-bottom: 80px;
-      p{
+      button{
         @extend %hover;
         padding: 10px 20px 10px 0;
         margin: 0;
         border-right: 4px solid white;
         color: $dark-color;
+        background-color: none;
+        border-radius: 0;
         &:hover{
           border-right: 4px solid $bright-color;
           color: transparent;
@@ -60,4 +62,7 @@
       }
     }
   }
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  background-color: transparent;
 }

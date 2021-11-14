@@ -1,5 +1,7 @@
 .successful-cases{
   .row{
+    border-radius: 12px;
+    overflow: hidden;
     h3{
       padding: 20px;
       margin: 0;
@@ -41,15 +43,6 @@
         @include text($font-size-lg, 26px);
         color: #B3B3BA;
       }
-    }
-    .br-t-r{
-      border-radius: 0 12px 0 0;
-    }
-    .br-b-l{
-      border-radius: 0 0 0 12px;
-    }
-    .br-b-r{
-      border-radius: 0 0 12px 0;
     }
   }
 }
