@@ -1,70 +1,91 @@
 .publications{
   padding: 40px 0 0;
   background-color: $dark-lite-color;
-  .row{
-
-    .pub-tittle{
-      h3{
-        @include tittle-item(42px, 50px,0 0 40px);
-      }
-      a{
-        @include link-page($font-size-sm-md,17px,#24A3FF);
-      }
+  position: relative;
+  .pub-tittle{
+    h3{
+      @include tittle-item(42px, 50px,0 0 40px);
     }
-    .pub-item{
-      padding: 0 40px 0 0;
-      &:nth-child(3n+3) {
-        padding: 0;
+    a{
+      @include link-page($font-size-sm-md,17px,#24A3FF);
+    }
+  }
+  .pub-item{
+    padding: 0 40px 0 0;
+    &:nth-child(3n+3) {
+      padding: 0;
+    }
+    .pub-content{
+      background-color: white;
+      border-radius: 12px;
+      margin-bottom: 40px;
+      &:nth-child(4){
+        margin-bottom: 0;
       }
-      .pub-content{
-        background-color: white;
-        border-radius: 12px;
-        margin-bottom: 40px;
-        &:nth-child(4){
-          margin-bottom: 0;
-        }
-        &:nth-child(5){
-          margin-bottom: 0;
-        }
-        &:nth-child(6){
-          margin-bottom: 0;
-        }
+      &:nth-child(5){
+        margin-bottom: 0;
+      }
+      &:nth-child(6){
+        margin-bottom: 0;
+      }
       img{
         width: 100%;
       }
       .text{
         padding: 20px;
-          a{
-            @extend %hover;
-            @include link-page($font-size-lg,21px,#24A3FF);
-            font-style: normal;
-            font-weight: bold;
-            text-transform: none;
-            margin-bottom: 10px;
-            &:hover{
-              text-decoration:revert;
-            }
+        a{
+          @extend %hover;
+          @include link-page($font-size-lg,21px,#24A3FF);
+          font-style: normal;
+          font-weight: bold;
+          text-transform: none;
+          margin-bottom: 10px;
+          &:hover{
+            text-decoration:revert;
           }
-          .date {
-            @include text($font-size-sm, 14px);
-            color: #B3B3BA;
-            text-transform: uppercase;
-            font-weight: bold;
-            margin-bottom: 20px;
-          }
-          .pub-line{
-            width: 100%;
-            height: 4px;
-            background-color: #E6E6F0;
-            margin-bottom: 20px;
-          }
-          p{
-            @include text($font-size-md,22px);
-            color: black;
-          }
+        }
+        .date {
+          @include text($font-size-sm, 14px);
+          color: #B3B3BA;
+          text-transform: uppercase;
+          font-weight: bold;
+          margin-bottom: 20px;
+        }
+        .pub-line{
+          width: 100%;
+          height: 4px;
+          background-color: #E6E6F0;
+          margin-bottom: 20px;
+        }
+        p{
+          @include text($font-size-md,22px);
+          color: black;
         }
       }
     }
-
+  }
+  .opacity-block{
+   height: 200px;
+   position: absolute;
+   bottom: 30px;
+   left: 0;
+   width: 100%;
+    background: linear-gradient(180deg, rgba(245, 245, 250, 0) 0%, #F5F5FA 86.5%);
+    .pub-more{
+      text-align: center;
+      a{
+        @extend %hover;
+        @include text($font-size-sm-md,17px);
+        padding: 17px 79px;
+        display: inline-block;
+        color: #fff;
+        border-radius: 12px;
+        background: #24A3FF;
+        box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+        &:hover{
+          background: #0990f3;
+        }
+      }
+    }
   }
 }

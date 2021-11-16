@@ -3,66 +3,95 @@
   border-radius: 0 0 12px 12px;
   color: white;
   padding-top: 80px;
-  .row{
-    @extend %align-content-c;
-    .services-categories{
-      @include text($font-size-xxl, 50px);
+  position: relative;
+  margin-bottom: 100px;
+  .services-categories {
+    width: 45%;
+    @include text($font-size-xxl, 50px);
+    text-align: right;
+    margin-bottom: 80px;
+    button{
+      @extend %hover;
+      padding: 10px 20px 10px 0;
+      margin: 0;
+      border-right: 4px solid white;
+      color: $dark-color;
+      background-color: transparent;
+      border-radius: 0;
       text-align: right;
-      margin-bottom: 80px;
-      button{
-        @extend %hover;
-        padding: 10px 20px 10px 0;
-        margin: 0;
-        border-right: 4px solid white;
-        color: $dark-color;
-        background-color: none;
-        border-radius: 0;
-        &:hover{
-          border-right: 4px solid $bright-color;
-          color: transparent;
-          -webkit-background-clip: text;
-          background-clip: text;
-          background-image: linear-gradient(to right, rgba(239, 128, 128, 1), rgba(240, 20, 90, 1));
-        }
-      }
-    }
-    .categories-content{
-      @extend %align-items-c;
-      flex-wrap: wrap;
-      margin-bottom: 80px;
-      h3{
-        @include text($font-size-xl, 38px);
-        margin-top: auto;
-      }
-      p{
-        @include text($font-size-lg-xl, 30px);
-      }
-    }
-    a{
-      @include link-page($font-size-sm-md,17px,$dark-color);
-    }
-    .title-item{
-      @include tittle-item($font-size-xxl, 50px,0 0 68px);
-    }
-    .services-item{
-      padding: 0 40px 0 0;
-      margin-bottom: 58px;
-      &:nth-child(3n){
-        padding: 0;
-      }
-      h3{
-        @include text($font-size-xl, 28px);
-        color: rgba(36, 163, 255, 1);
-      }
-      p{
-        @include text($font-size-lg, 26px,);
-      }
-      img{
-        margin-bottom: 20px;
+      &:hover{
+        border-right: 4px solid $bright-color;
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        background-image: linear-gradient(to right, rgba(239, 128, 128, 1), rgba(240, 20, 90, 1));
       }
     }
   }
+  .categories-content{
+    @extend %align-items-c;
+    flex-wrap: wrap;
+    margin-bottom: 80px;
+    width: 40%;
+    h3{
+      @include text(32px, 38px);
+      margin-top: auto;
+      margin-bottom: 20px;
+    }
+    p{
+      @include text(17px, 30px);
+    }
+  }
+  a{
+    @include link-page($font-size-sm-md,17px,$dark-color);
+  }
+  .title-item{
+    @include tittle-item($font-size-xxl, 50px,0 0 68px);
+  }
+  .services-item{
+    padding: 0 40px 0 0;
+    margin-bottom: 58px;
+    &:nth-child(3n){
+      padding: 0;
+    }
+    h3{
+      @include text($font-size-xl, 28px);
+      color: rgba(36, 163, 255, 1);
+    }
+    p{
+      @include text($font-size-lg, 26px,);
+    }
+    img{
+      margin-bottom: 20px;
+    }
+  }
+
+  &:before, &:after{
+    content: '';
+    position: absolute;
+    border-radius: 0 0 12px 12px;
+    height: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &:before{
+    bottom: -10px;
+    width: 98%;
+    background: #CACADB;
+  }
+
+  &:after{
+    bottom: -20px;
+    width: 95%;
+    background: #E7E7F2;
+  }
 }
+
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: linear-gradient(to right, rgba(240, 20, 90, 1),rgba(239, 128, 128, 1));
   background-color: transparent;
 }

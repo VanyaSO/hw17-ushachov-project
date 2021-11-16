@@ -1,17 +1,5 @@
 .team{
   padding-bottom:90px;
-  .line-one{
-    @extend %line;
-    width: 98%;
-    margin: 0 auto;
-    background: #CACADB;
-  }
-  .line-two{
-    @extend %line;
-    width: 95%;
-    margin: 0 auto 40px;
-    background: #E7E7F2;
-  }
   .row{
     margin: 0;
     background-color: $dark-lite-color;

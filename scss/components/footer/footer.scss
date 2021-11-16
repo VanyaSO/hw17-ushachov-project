@@ -1,6 +1,9 @@
 .footer{
   padding: 33px 0 50px;
-  .row {
+  background-color: $dark-lite-color;
+  .container{
+    border-top: 4px #E6E6F0 solid;
+    padding-top: 30px;
     .footer-info{
       address{
         @include text($font-size-md,19px);
