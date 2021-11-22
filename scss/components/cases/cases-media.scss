@@ -1,0 +1,68 @@
+@include desktop(){
+  .successful-cases{
+    .row{
+      .content-sm{
+        h3{
+          @include text($font-size-lg-xl, 28px);
+        }
+      }
+    }
+  }
+}
+
+@include tablet(){
+  .successful-cases{
+    .row{
+      .sm-1{
+        height: 256px;
+      }
+      .content-sm{
+        @include text($font-size-lg-xl, 28px);
+      }
+    }
+  }
+}
+
+@include phone(){
+  .successful-cases{
+    .row{
+      .content-xl, .sm-2, .content-sm{
+        height: 150px;
+      }
+    }
+  }
+}
+
+@include phone-sm(){
+  .successful-cases{
+    padding: 0 20px;
+    .row{
+      .content-xl, .content-sm{
+        h3{
+          @include text(18px, 28px);
+        }
+        p{
+          padding-bottom: 10px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 374px) {
+  .successful-cases{
+    .row{
+      .content-xl{
+        h3{
+          @include text($font-size-sm-md, 28px);
+        }
+      }
+      .content-sm{
+        h3{
+          @include text($font-size-sm-md, 28px);
+        }
+      }
+    }
+  }
+}
+

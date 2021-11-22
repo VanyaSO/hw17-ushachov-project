@@ -1,18 +1,60 @@
+//mixin for text
 @mixin text($font-size, $line-h){
   font-size: $font-size;
   line-height: $line-h;
 }
 
 @mixin link-page($font-size, $line-h,$color){
+  font-style: normal;
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: uppercase;
+  &:hover{
+    text-decoration: revert;
+  }
   font-size: $font-size-sm-md;
   line-height: $line-h;
   color: $color;
-  @extend %link-page;
 }
 
 @mixin tittle-item($font-size, $line-h,$margin){
-  @extend %tittle-item;
+  font-weight: bold;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: linear-gradient(to right, rgba(240, 20, 90, 1),rgba(239, 128, 128, 1));
   font-size: $font-size;
   line-height: $line-h;
   margin: $margin;
+}
+
+//mixin for media
+@mixin desktop-xxl() {
+  @media (max-width: $xxl) {
+    @content;
+  }
+}
+
+@mixin desktop() {
+  @media (max-width: $xl) {
+    @content;
+  }
+}
+
+@mixin tablet() {
+  @media (max-width: $lg) {
+    @content;
+  }
+}
+
+@mixin phone() {
+  @media (max-width: $md) {
+    @content;
+  }
+}
+
+@mixin phone-sm() {
+  @media (max-width: $sm) {
+    @content;
+  }
 }

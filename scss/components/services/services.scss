@@ -4,11 +4,10 @@
   color: white;
   padding-top: 80px;
   position: relative;
-  margin-bottom: 100px;
+  margin-bottom: 60px;
   .services-categories {
     width: 45%;
     @include text($font-size-xxl, 50px);
-    text-align: right;
     margin-bottom: 80px;
     button{
       @extend %hover;
@@ -19,6 +18,7 @@
       background-color: transparent;
       border-radius: 0;
       text-align: right;
+      font-weight: 600;
       &:hover{
         border-right: 4px solid $bright-color;
         color: transparent;
@@ -34,7 +34,7 @@
     margin-bottom: 80px;
     width: 40%;
     h3{
-      @include text(32px, 38px);
+      @include text($font-size-xl-xxl, 38px);
       margin-top: auto;
       margin-bottom: 20px;
     }
@@ -54,16 +54,21 @@
     &:nth-child(3n){
       padding: 0;
     }
-    h3{
-      @include text($font-size-xl, 28px);
-      color: rgba(36, 163, 255, 1);
+    .box {
+      flex-direction: column;
+      h3{
+        @include text($font-size-xl, 28px);
+        color: rgba(36, 163, 255, 1);
+      }
+      img{
+        margin-bottom: 20px;
+      }
     }
+
     p{
       @include text($font-size-lg, 26px,);
     }
-    img{
-      margin-bottom: 20px;
-    }
+
   }
 
   &:before, &:after{

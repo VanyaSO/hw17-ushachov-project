@@ -14,8 +14,12 @@
     min-height: 645px;
 
     .solution-tittle{
-      margin-bottom: 120px;
-      max-width: 350px;
+      margin-bottom: 10rem;
+      h3{
+        @include text(38px, 45px);
+        max-width: 500px;
+        font-size: 32px;
+      }
     }
   }
   img{

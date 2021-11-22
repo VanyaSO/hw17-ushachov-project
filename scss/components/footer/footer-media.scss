@@ -1,0 +1,45 @@
+@include tablet(){
+  .footer{
+    .container{
+      .footer-info{
+        justify-content: center;
+        margin-bottom: 20px;
+      }
+      .footer-comp{
+        justify-content: center;
+      }
+    }
+  }
+}
+
+@include phone-sm(){
+  .footer{
+    padding-top: 60px;
+    .container{
+      .footer-info{
+        flex-direction: column;
+        margin-bottom: 20px;
+        .info-top, .info-bottom{
+          justify-content: center;
+          flex-direction: column;
+          text-align: center;
+          img{
+            margin-bottom: 20px;
+          }
+          ul{
+            padding: 0;
+            text-align: center;
+            li{
+              list-style-type: none;
+              margin: 0 auto 20px;
+            }
+          }
+        }
+      }
+      .footer-comp{
+        justify-content: center;
+        text-align: center;
+      }
+    }
+  }
+}

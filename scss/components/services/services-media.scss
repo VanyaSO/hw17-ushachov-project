@@ -1,0 +1,131 @@
+@include desktop() {
+  .services {
+    .services-categories{
+      @include text(38px, 50px);
+    }
+
+    .categories-content {
+      h3 {
+        @include text($font-size-xl, 38px);
+      }
+      p {
+        margin: 0;
+      }
+    }
+    .services-item{
+      &:nth-child(3n){
+        padding: 0 40px 0 0;
+      }
+
+      .box{
+        h3{
+          @include text($font-size-lg-xl, 28px);
+        }
+        img{
+          max-width: 70px;
+          margin-bottom: 20px;
+        }
+      }
+
+      p{
+        @include text($font-size-sm-md, 26px,);
+      }
+
+    }
+  }
+}
+
+@include tablet() {
+  .services {
+    .services-categories{
+      width: 40%;
+      @include text($font-size-xl-xxl, 50px);
+      margin-right: 70px;
+      button{
+        padding: 0 20px 0 0;
+      }
+    }
+    .categories-content{
+      width: 45%;
+      h3{
+        @include text($font-size-lg-xl, 38px);
+      }
+      p{
+        @include text($font-size-sm, 30px);
+      }
+    }
+  }
+}
+
+@include phone(){
+  .services {
+    .services-categories{
+      width: 100%;
+      @include text(28px, normal);
+      margin-right: 0;
+      margin-bottom: 10px;
+      padding-bottom: 20px;
+      border-bottom: 2px solid white;
+      button{
+        padding: 0;
+        border-right: none;
+        text-align: left;
+        &:hover{
+          border-right: none;
+        }
+      }
+    }
+    .categories-content{
+      width: 100%;
+      h3{
+        margin-bottom: 10px;
+      }
+      p{
+        @include text($font-size-sm, 30px);
+      }
+    }
+    .title-item{
+      @include tittle-item($font-size-xl-xxl,48px,0 0 68px);
+    }
+    .categories-content {
+      h3 {
+        @include text($font-size-xl, 38px);
+      }
+
+      p {
+        margin: 0;
+      }
+    }
+    .services-item{
+      margin-bottom: 50px;
+      padding: 0;
+      &:nth-child(3n){
+        padding: 0;
+      }
+      .box {
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 10px;
+        h3{
+          @include text($font-size-lg,28px);
+        }
+        img{
+          max-width: 64px;
+          margin-bottom: 0;
+          margin-right: 10px;
+        }
+      }
+    }
+    &:before{
+      bottom: -10px;
+      width: 93%;
+      background: #CACADB;
+    }
+
+    &:after{
+      bottom: -20px;
+      width: 90%;
+      background: #E7E7F2;
+    }
+  }
+}

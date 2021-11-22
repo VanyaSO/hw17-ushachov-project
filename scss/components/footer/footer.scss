@@ -1,32 +1,45 @@
 .footer{
-  padding: 33px 0 50px;
+  padding: 0 0 50px;
   background-color: $dark-lite-color;
   .container{
     border-top: 4px #E6E6F0 solid;
     padding-top: 30px;
     .footer-info{
-      address{
-        @include text($font-size-md,19px);
-        color: #323264;
-      }
-      ul{
-        li{
-          color: silver;
-          a{
-            @include text($font-size-sm,14px);
-            font-style: normal;
-            font-weight: bold;
-            text-transform: uppercase;
-            color: $Aqua-color;
-          }
-          p{
-            @include text($font-size-md,19px);
-            color: #323264;
-            font-style: normal;
-            font-weight: bold;
+      .info-top{
+        address{
+          @include text($font-size-md,19px);
+          color: #323264;
+        }
+        ul{
+          li{
+            color: silver;
           }
         }
       }
+      .info-bottom{
+        ul{
+          li{
+            color: silver;
+            a{
+              @include text($font-size-sm,14px);
+              font-style: normal;
+              font-weight: bold;
+              text-transform: uppercase;
+              color: $Aqua-color;
+            }
+            p{
+              @include text($font-size-md,19px);
+              color: #323264;
+              font-style: normal;
+              font-weight: bold;
+            }
+          }
+        }
+      }
+    }
+    .footer-comp{
+      color:#B3B3BA;
+      justify-content: flex-end;
     }
   }
 }
