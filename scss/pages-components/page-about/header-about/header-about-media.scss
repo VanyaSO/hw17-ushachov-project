@@ -1,5 +1,5 @@
 @include tablet(){
-  .header{
+  .header-about{
     .row{
       .information{
         ul{
@@ -12,12 +12,12 @@
       }
       .navbar-expand-lg{
         .navbar-nav{
-            .nav-link {
-              border: none;
-              &:active{
-                color: rgba(252, 248, 248, 0.75);
-                text-shadow: 0 0 5px white;
-              }
+          .nav-link {
+            border: none;
+            &:active{
+              color: rgba(252, 248, 248, 0.75);
+              text-shadow: 0 0 5px white;
+            }
           }
         }
       }
@@ -26,7 +26,7 @@
 }
 
 @include phone(){
-  .header{
+  .header-about{
     .row{
       .information{
         justify-content: space-between;
@@ -56,9 +56,8 @@
     }
   }
 }
-
 @include phone-sm(){
-  .header{
+  .header-about{
     .row{
       .navbar-expand-lg{
         .navbar-nav{
@@ -69,6 +68,9 @@
             }
           }
         }
+      }
+      .logo-header{
+        width: 223px;
       }
     }
   }

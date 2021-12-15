@@ -1,0 +1,19 @@
+.team-tittle{
+  position: relative;
+  @extend %style-bg;
+  img{
+    width: 100%;
+  }
+  h3{
+    @include text(96px, 113px);
+    opacity: 0.8;
+    text-shadow: 0 15px 30px rgba(40, 40, 86, 0.8);
+    letter-spacing: 63px;
+    text-transform: uppercase;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

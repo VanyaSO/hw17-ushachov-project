@@ -1,0 +1,127 @@
+@include desktop-xxl(){
+  .team-people{
+    img{
+      max-width: 350px;
+    }
+    .people{
+      .content-people{
+        .text{
+          h3{
+            @include text($font-size-md,21px);
+          }
+
+          p{
+            @include text($font-size-sm-md,22px);
+          }
+        }
+      }
+    }
+  }
+}
+
+@include desktop(){
+  .team-people{
+    img{
+      max-width: 300px;
+    }
+    .people{
+      .content-people{
+        margin: 20px auto 0;
+        max-width: 300px;
+        .text{
+          h3{
+            @include text($font-size-md,21px);
+          }
+
+          p{
+            @include text($font-size-sm-md,22px);
+          }
+        }
+      }
+    }
+  }
+}
+
+@include phone(){
+  .team-people{
+    .tittle{
+      h3{
+        @include tittle-item ($font-size-xl-xxl,50px,0 0 80px);
+      }
+    }
+    img{
+      max-width: 250px;
+    }
+    .people{
+      .content-people{
+        margin: 20px auto 0;
+        max-width: 260px;
+        .text{
+          h3{
+            @include text($font-size-md,21px);
+          }
+
+          p{
+            @include text($font-size-sm-md,22px);
+          }
+        }
+      }
+    }
+  }
+}
+
+@include phone-sm(){
+  .team-people{
+    img{
+      max-width: 158px;
+    }
+    .people{
+      display: flex;
+      .content-people{
+        flex-wrap: wrap;
+        align-content: center;
+        margin: 0 0 0 20px;
+        .text{
+          margin-bottom: 10px;
+          h3{
+            @include text($font-size-lg,21px);
+            color:$dark-blue;
+          }
+
+          p{
+            @include text($font-size-md,22px);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media  (max-width: 360px){
+  .team-people{
+    .tittle{
+      h3{
+        @include tittle-item (26px,40px,0 0 50px);
+      }
+    }
+    img{
+      max-width: 155px;
+    }
+    .people{
+      .content-people{
+        margin: 0 0 0 10px;
+        .text{
+          h3{
+            @include text($font-size-sm-md,21px);
+            color:$dark-blue;
+            font-weight: 600;
+          }
+
+          p{
+            @include text($font-size-sm-md,22px);
+          }
+        }
+      }
+    }
+  }
+}

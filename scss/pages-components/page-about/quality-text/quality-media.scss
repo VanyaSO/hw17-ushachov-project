@@ -1,0 +1,29 @@
+@include tablet(){
+  .container-about{
+    max-width: $sm;
+  }
+  .quality{
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+@include phone(){
+  .container-about{
+    max-width: 500px;
+  }
+  .quality{
+    padding: 30px 0;
+    .text{
+      p{
+        @include text($font-size-lg-xl,30px);
+      }
+    }
+    .info{
+      h3{
+        @include text($font-size-xl-xxl,50px);
+      }
+    }
+  }
+}
+

@@ -1,0 +1,34 @@
+@include desktop(){
+  .team-tittle {
+    h3{
+      @include text(72px, 113px);
+    }
+  }
+}
+
+@include tablet(){
+  .team-tittle {
+    h3{
+      @include text(56px, 93px);
+      letter-spacing: 48px;
+    }
+  }
+}
+
+@include phone(){
+  .team-tittle {
+    h3{
+      @include text(32px, 54px);
+      letter-spacing: 32px;
+    }
+  }
+}
+
+@include phone-sm(){
+  .team-tittle {
+    h3{
+      @include text(21px, 42px);
+      letter-spacing: 20px;
+    }
+  }
+}

@@ -1,0 +1,77 @@
+.achievements{
+  background-color: $dark-lite-color;
+  border-radius: 12px 12px 0 0;
+  .tittle{
+    margin: 28px 0 30px;
+  }
+  .slider{
+    display: block;
+    .item{
+      background: #FFFFFF;
+      border-radius: 12px;
+      width: 300px;
+      margin: 0 20px 76px;
+      &:nth-child(1){
+        margin-left: 0;
+      }
+      &:nth-child(4){
+        margin-right:0;
+      }
+      img{
+        margin: 25px 0;
+      }
+    }
+  }
+  .slider-mini{
+    display: none;
+    .item{
+      background: #FFFFFF;
+      border-radius: 12px;
+      width: 300px;
+      margin: 0 20px 76px;
+      &:nth-child(1){
+        margin-left: 0;
+      }
+      &:nth-child(4){
+        margin-right:0;
+      }
+      img{
+        margin: 25px 0;
+      }
+    }
+  }
+}
+
+.carousel-indicators bottom-achievements{
+  position: absolute;
+  right: 0;
+  left: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  padding:0;
+  margin: 0 15%;
+  list-style: none;
+}
+.carousel-indicators [data-bs-target] {
+  flex: 0 1 auto;
+  width: 16px;
+  height: 16px;
+  padding: 0;
+  margin-right: 3px;
+  margin-left: 3px;
+  text-indent: -999 px;
+  cursor: pointer;
+  background-color: #24A3FF;
+  background-clip: padding-box;
+  border-radius: 50%;
+  opacity: .5;
+  transition: opacity .6s ease;
+  border: none;
+}
+.carousel-indicators .active {
+  opacity: 1;
+}
+.bottom-achievements{
+  bottom: 25px;
+}

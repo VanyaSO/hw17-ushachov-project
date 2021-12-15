@@ -1,0 +1,84 @@
+.header-services{
+  background: transparent;
+  width: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 50px;
+  left: 0;
+  z-index: 1;
+  .row{
+    @extend %align-items-c;
+    .information{
+      @extend %align-items-c;
+      color: white;
+      justify-content: right;
+      .languages{
+        display: flex;
+        p{
+          @extend %hover;
+          font-weight: bold;
+          font-size: $font-size-sm;
+          padding: 3px 6px;
+          background: transparent;
+          border-radius: 8px;
+          margin: 0;
+          &:hover{
+            background-color: $bright-color;
+            color: white;
+          }
+        }
+      }
+      ul{
+        display: flex;
+        margin-bottom: 0;
+        li{
+          margin-right:30px;
+          font-size: $font-size-md;
+          img{
+            cursor: pointer;
+          }
+        }
+      }
+    }
+    .navbar-expand-lg{
+      .navbar-nav{
+        .nav-link {
+          font-weight: normal;
+          font-size: $font-size-lg;
+          color: white;
+          text-align: right;
+          transition: $transition;
+          border-bottom: 3px solid transparent;
+          padding: 0;
+          margin-left: 15px;
+          &:hover{
+            border-color: white;
+          }
+        }
+        .menu-active{
+          color: white;
+          border-bottom-color: white;
+        }
+      }
+    }
+    .navbar-light{
+      .navbar-toggler {
+        color: rgba(0,0,0,.55);
+        border-color: white;
+        &:focus {
+          text-decoration: none;
+          outline: 0;
+          box-shadow: none;
+        }
+        &:active {
+          text-decoration: none;
+          outline: 0;
+          box-shadow: 0 0 5px white;
+        }
+      }
+      .navbar-toggler-icon {
+        background-image: url('../../../../images/menu-header.png');
+      }
+    }
+  }
+}

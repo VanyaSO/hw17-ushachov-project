@@ -1,0 +1,96 @@
+.header-publications{
+  background: white;
+  width: 100%;
+  overflow: hidden;
+  padding: 60px 0;
+  z-index: 1;
+  .row{
+    @extend %align-items-c;
+    .information{
+      @extend %align-items-c;
+      color: white;
+      justify-content: right;
+      .languages{
+        display: flex;
+        p{
+          @extend %hover;
+          font-weight: bold;
+          font-size: $font-size-sm;
+          padding: 3px 6px;
+          background: transparent;
+          border-radius: 8px;
+          margin: 0;
+          color: #B3B3BA;
+          &:hover{
+            background-color: $bright-color;
+            color: white;
+          }
+        }
+      }
+      ul{
+        display: flex;
+        margin-bottom: 0;
+        li{
+          list-style-type: none;
+          color: #B3B3BA;
+          margin-right:30px;
+          font-size: $font-size-md;
+          &:last-child{
+            margin-right: 0;
+          }
+          img{
+            cursor: pointer;
+          }
+        }
+      }
+    }
+    .navbar-expand-lg{
+      .navbar-nav{
+        .nav-item{
+          .nav-link {
+            font-weight: 500;
+            font-size: $font-size-lg;
+            color: $Aqua-color;
+            text-align: right;
+            transition: $transition;
+            border-bottom: 3px solid transparent;
+            padding: 0;
+            margin-left: 15px;
+            display: block;
+            &:last-child{
+              margin-right: 0;
+            }
+            &:hover{
+              color: $bright-color;
+              border-color: $bright-color;
+            }
+          }
+          .menu-active{
+            color: $bright-color;
+            border-bottom-color: $bright-color;
+          }
+        }
+      }
+    }
+    .navbar-light{
+      .navbar-toggler {
+        color: rgba(0,0,0,.55);
+        border-color: white;
+        &:focus {
+          text-decoration: none;
+          outline: 0;
+          box-shadow: none;
+        }
+        &:active {
+          text-decoration: none;
+          outline: 0;
+          box-shadow: 0 0 5px white;
+          background: white;
+        }
+      }
+      .navbar-toggler-icon {
+        background-image: url('../../../../images/menu-header-about.png');
+      }
+    }
+  }
+}

@@ -1,0 +1,65 @@
+@include desktop-xxl(){
+  .achievements{
+    .slider{
+      .item{
+        width: 250px;
+      }
+    }
+  }
+}
+
+@include desktop(){
+  .achievements{
+    .slider{
+      .item{
+        width: 300px;
+        margin-bottom: 50px;
+        &:nth-child(1){
+          margin-left: 20px;
+        }
+        &:nth-child(3){
+          margin-right:20px;
+          margin-bottom: 76px;
+        }
+
+        &:nth-child(4){
+          margin-bottom: 76px;
+          margin-right:20px;
+        }
+      }
+    }
+  }
+}
+
+@include phone(){
+  .achievements{
+    .slider{
+      display: none;
+    }
+    .slider-mini{
+      display: block;
+      .item{
+        width: 230px;
+        img{
+          max-width: 88px;
+          height: 31px;
+        }
+      }
+    }
+  }
+}
+
+@include phone(){
+  .achievements{
+    .slider-mini{
+      .item{
+        &:nth-child(1){
+          margin-left:20px;
+        }
+        &:nth-child(3){
+          margin-right:20px;
+        }
+      }
+    }
+  }
+}

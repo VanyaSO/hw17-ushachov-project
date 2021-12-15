@@ -59,6 +59,10 @@
       h3{
         @include text($font-size-xl, 28px);
         color: rgba(36, 163, 255, 1);
+        @extend %hover;
+        &:hover{
+          text-decoration-line: underline;
+        }
       }
       img{
         margin-bottom: 20px;

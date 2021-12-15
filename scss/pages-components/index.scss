@@ -1,2 +1,12 @@
-@import "pages-services/header";
-@import "pages-services/services";
+@import "./page-services/header-services";
+@import "./page-services/services";
+@import "./page-about/header-about";
+@import "./page-about/facts";
+@import "./page-about/team-tittle";
+@import "./page-about/quality-text";
+@import "./page-about/achievements";
+@import "./page-team/header-team";
+@import "./page-team/team-people";
+@import "./page-team/footer";
+@import "./page-publications/header-publications";
+@import "./page-publications/publications-page";

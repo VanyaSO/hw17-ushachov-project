@@ -87,7 +87,6 @@
 .carousel-indicators {
   position: absolute;
   right: 0;
-  bottom: -60px;
   left: 0;
   z-index: 2;
   display: flex;
@@ -115,5 +114,7 @@
 .carousel-indicators .active {
   opacity: 1;
 }
-
+.bottom-team{
+  bottom: -60px;
+}
 
