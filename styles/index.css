@@ -63,6 +63,11 @@ a {
   margin: 0 auto;
 }
 
+.container-pub-info {
+  max-width: 910px;
+  margin: 0 auto;
+}
+
 .header {
   background: transparent;
   width: 100%;
@@ -2286,6 +2291,25 @@ a {
   .publications-page .pub-item .pub-content .text .txt-info {
     display: none;
   }
+}
+.info .name-pub {
+  margin: 0 auto;
+  border-bottom: solid #E6E6F0 4px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.info .name-pub h3 {
+  font-size: 32px;
+  line-height: 38px;
+  color: #323264;
+}
+.info .name-pub .date {
+  font-size: 12px;
+  line-height: 14px;
+  color: #B3B3BA;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
 
 /*# sourceMappingURL=index.css.map */
