@@ -2,7 +2,7 @@
   padding-top: 200px;
   background: linear-gradient(26.01deg, #323264 14.33%, #323264 51.39%, #7A425E 87.53%);
 
-  .solution-bg {
+  .solution-bg
     @extend %align-items-c;
     justify-content: center;
     background-repeat: no-repeat;
